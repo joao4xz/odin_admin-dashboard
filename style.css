@@ -10,7 +10,7 @@
 #main-container {
   height: 100vh;
   display: grid;
-  grid-template: 1fr 5fr/ 1fr 4fr;
+  grid-template: 1fr 5fr/ 1fr 4.6fr;
 }
 
 #sidebar {
@@ -24,11 +24,6 @@
   margin-bottom: 4rem;
 }
 
-.main-options div,
-.secondary-options div{
-  margin-bottom: 0.8rem;
-}
-
 .dashboard-container h1 {
   font-size: 2.5rem;
 }
@@ -39,9 +34,67 @@
   font-size: 1.5rem;
 }
 
+.main-options {
+  display: grid;
+  grid-template: repeat(5, auto) / auto;
+  row-gap: 0.8rem;
+}
+
+.secondary-options {
+  display: grid;
+  grid-template: repeat(3, auto) / auto;
+  row-gap: 0.8rem;
+}
+
+.main-options div,
+.secondary-options div {
+  display: flex;
+  gap: 0.8rem;
+}
+
+svg {
+  width: 28px;
+}
+
 #header {
   display: grid;
   grid-template: 1fr 1fr / 1fr;
+}
+
+.first-bar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+
+.search-area {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+  padding: 1rem 3rem;
+}
+
+.search-area input{
+  background-color: #E2E8F0;
+  border: 1px solid #E2E8F0;
+  border-radius: 1vh;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-self: center;
+  padding: 1rem 3rem;
+}
+
+.user-area .profile-picture img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.user-area .user-name {
+  font-size: 1.5rem;
 }
 
 #main-content {
