@@ -21,7 +21,11 @@
 }
 
 #sidebar > div {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+}
+
+.dashboard-container {
+  margin-top: 1rem;
 }
 
 .dashboard-container h1 {
@@ -56,9 +60,14 @@ svg {
   width: 28px;
 }
 
+#header, #main-content {
+  font-weight: 500;
+}
+
 #header {
   display: grid;
   grid-template: 1fr 1fr / 1fr;
+  box-shadow: 0 4px 3px -3px #7f8081;
 }
 
 .first-bar {
@@ -96,6 +105,52 @@ svg {
 .user-area .user-name {
   font-size: 1.5rem;
 }
+
+.second-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0 3rem;
+  margin-bottom: 0.9rem;
+}
+
+.hello-user-area {
+  display: grid;
+  grid-template: 1fr/ auto auto;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.main-pfp {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.main-pfp img {
+  width: 4.5rem;
+  border-radius: 50%;
+}
+
+.hello-user-texts .hi-there {
+  font-size: 1.2rem;
+}
+
+.hello-user-texts .nickname {
+  font-size: 1.5rem;
+}
+
+.buttons-area button {
+  background-color: #9333ea;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 1rem;
+}
+
 
 #main-content {
 
