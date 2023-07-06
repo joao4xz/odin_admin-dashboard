@@ -94,7 +94,7 @@ svg {
   align-items: center;
   gap: 2rem;
   justify-self: center;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
 }
 
 .user-area .profile-picture img {
@@ -127,7 +127,7 @@ svg {
 }
 
 .main-pfp img {
-  width: 4.5rem;
+  width: 4rem;
   border-radius: 50%;
 }
 
@@ -156,7 +156,7 @@ svg {
   display: grid;
   grid-template: auto 1fr 1fr / 3fr 1fr;
   column-gap: 2rem;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem 2rem 2rem;
 }
 
 .project-cards {
@@ -188,23 +188,43 @@ svg {
 #main-content .project-cards,
 #main-content .announcement-card,
 #main-content .trending-card {
-  background-color: white;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border-radius: 1vh;
 }
 
 #main-content .announcement-card,
 #main-content .trending-card {
   background-color: white;
-  border-radius: 5%;
 }
 
 .announcement-card {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 1.5rem 2rem;
 }
 
 .announcement:not(:last-child) {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5em;
   border-bottom: 1px solid #d2d2d2;
+}
+
+.trending-card {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.trending {
+  display: flex;
+  align-items: center;
+}
+
+.trending-card img {
+  width: 3rem;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.trending-username {
+  font-weight: 400;
 }
