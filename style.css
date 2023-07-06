@@ -151,7 +151,60 @@ svg {
   margin: 0 1rem;
 }
 
-
 #main-content {
+  background-color: #E2E8F0;
+  display: grid;
+  grid-template: auto 1fr 1fr / 3fr 1fr;
+  column-gap: 2rem;
+  padding: 1.5rem 2rem;
+}
 
+.project-cards {
+  grid-row: 2 / 4;
+}
+
+.announcement-box {
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.trending-box {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+#main-content h2 {
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#main-content p {
+  margin-top: 1px;
+  color: #636363;
+}
+
+#main-content .project-cards,
+#main-content .announcement-card,
+#main-content .trending-card {
+  background-color: white;
+}
+
+#main-content .announcement-card,
+#main-content .trending-card {
+  background-color: white;
+  border-radius: 5%;
+}
+
+.announcement-card {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+}
+
+.announcement:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d2d2d2;
 }
