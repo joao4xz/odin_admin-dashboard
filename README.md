@@ -1,6 +1,6 @@
 # Admin Dashboard Project
 
-![Alt Text](./assets/images/final_image.png)
+![Alt Text](./assets/final_image.png)
 
 <p align="center">
   <a href="https://joao4xz.github.io/odin_admin-dashboard/">Live Preview</a>
