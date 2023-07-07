@@ -161,6 +161,24 @@ svg {
 
 .project-cards {
   grid-row: 2 / 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project h3 {
+  margin-bottom: 0.25rem;
+}
+
+.project a {
+  align-self: flex-end;
 }
 
 .announcement-box {
@@ -185,16 +203,12 @@ svg {
   color: #636363;
 }
 
-#main-content .project-cards,
 #main-content .announcement-card,
-#main-content .trending-card {
+#main-content .trending-card,
+#main-content .project {
+  background-color: white;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   border-radius: 1vh;
-}
-
-#main-content .announcement-card,
-#main-content .trending-card {
-  background-color: white;
 }
 
 .announcement-card {
