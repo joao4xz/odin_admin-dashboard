@@ -65,6 +65,7 @@ svg {
 }
 
 #header {
+  /* grid-area: 1 / 2 / 2 / 3; */
   display: grid;
   grid-template: 1fr 1fr / 1fr;
   box-shadow: 0 4px 3px -3px #7f8081;
@@ -139,19 +140,25 @@ svg {
   font-size: 1.5rem;
 }
 
+.buttons-area {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
 .buttons-area button {
   background-color: #9333ea;
   color: white;
-  padding: 10px 20px;
   border: none;
   border-radius: 1vh;
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: 500;
-  margin: 0 1rem;
+  padding: 10px 20px;
 }
 
 #main-content {
+  /* grid-area: 2 / 2 / 3 / 3; */
   background-color: #E2E8F0;
   display: grid;
   grid-template: auto 1fr 1fr / 3fr 1fr;
